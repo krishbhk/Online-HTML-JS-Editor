@@ -1,0 +1,39 @@
+html{
+    --text-color-normal: rgb(148, 158, 168);
+    --text-color-light: rgb(76, 89, 103);
+    --text-color-richer: rgb(148, 184, 219);
+    --text-color-highlight: rgb(195, 101, 34);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+.code-area {
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    border-right:1px solid #555555;
+}
+.code-area textarea {
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 33.33%;
+    font-size: 18px;
+    padding: 10px;
+}
+.preview-area {
+    width: 50%;
+}
+.preview-area iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
